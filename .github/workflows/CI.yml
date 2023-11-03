@@ -32,7 +32,6 @@ jobs:
       
       - name: Select Xcode version
         run: |
-         xcode-select --install
          sudo xcode-select -switch /Library/Developer/CommandLineTools
   
       # Setup the flutter environment.
