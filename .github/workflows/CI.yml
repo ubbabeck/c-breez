@@ -29,11 +29,14 @@ jobs:
           ssh-key: ${{secrets.REPO_SSH_KEY}}          
           path: 'breez-sdk'
           
-
+      
+      - name: Select Xcode version
+        run: sudo xcode-select -s /Applications/Xcode_14.3.app
+  
       # Setup the flutter environment.
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.13.8'
+          flutter-version: '3.13.9'
           channel: 'stable'
 
       - uses: actions/setup-java@v2
