@@ -15,7 +15,7 @@ jobs:
 
   build:
 
-    runs-on: macOS-latest
+    runs-on: macOS-13
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -31,9 +31,8 @@ jobs:
           
       
           
-      - uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: latest
+
+
       # Setup the flutter environment.
       - uses: subosito/flutter-action@v2
         with:
