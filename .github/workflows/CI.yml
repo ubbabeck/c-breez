@@ -30,11 +30,10 @@ jobs:
           path: 'breez-sdk'
           
       
-      - name: Select Xcode version
-        run: |
-          sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
           
-  
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest
       # Setup the flutter environment.
       - uses: subosito/flutter-action@v2
         with:
