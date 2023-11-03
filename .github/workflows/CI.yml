@@ -32,7 +32,8 @@ jobs:
       
       - name: Select Xcode version
         run: |
-         sudo xcode-select -switch /Library/Developer/CommandLineTools
+          sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+          
   
       # Setup the flutter environment.
       - uses: subosito/flutter-action@v2
